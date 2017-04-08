@@ -38,11 +38,11 @@ $(document).ready(function() {
 		setTimeout(function() {
 			$workS.css({
 				'transform': 'translate(-100%)',
-				'-webkit-transform': 'translate(100%)'
+				'-webkit-transform': 'translate(-100%)'
 			});
 			$container.css({
 				'transform': 'translate(-100%)',
-				'-webkit-transform': 'translate(100%)'
+				'-webkit-transform': 'translate(-100%)'
 			});
 		}, 200);
 	});
