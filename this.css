@@ -190,6 +190,7 @@ p {
 #desc {
     position: relative;
     transition: transform 0.33s ease;
+
 }
 #desc:hover::after{
     opacity: 1;

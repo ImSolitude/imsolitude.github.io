@@ -22,10 +22,12 @@ $(document).ready(function() {
         $blurThisH.removeClass('blur');
         setTimeout(function() {
             $hireS.css({
-                'transform': 'translate(-100%)'
+                'transform': 'translate(-100%)',
+				'transform': '-webkit-translate(-100%)'
             });
             $container.css({
-                'transform': 'translate(-100%)'
+                'transform': 'translate(-100%)',
+				'transform': '-webkit-translate(-100%)'
             });
         }, 200);
     });
@@ -35,10 +37,12 @@ $(document).ready(function() {
 		$blurThisW.removeClass('blur');
 		setTimeout(function() {
 			$workS.css({
-				'transform': 'translate(-100%)'
+				'transform': 'translate(-100%)',
+				'transform': '-webkit-translate(100%)'
 			});
 			$container.css({
-				'transform': 'translate(-100%)'
+				'transform': 'translate(-100%)',
+				'transform': '-webkit-translate(100%)'
 			});
 		}, 200);
 	});
@@ -49,10 +53,12 @@ $(document).ready(function() {
         $blurThisH.addClass('blur');
         setTimeout(function() {
             $hireS.css({
-                'transform': 'translate(0%)'
+                'transform': 'translate(0%)',
+				'transform': '-webkit-translate(0%)'
             });
             $container.css({
-                'transform': 'translate(0%)'
+                'transform': 'translate(0%)',
+				'transform': '-webkit-translate(0%)'
             });
         }, 200);
     });
@@ -62,10 +68,12 @@ $(document).ready(function() {
 		$blurThisW.addClass('blur');
 		setTimeout(function() {
 			$workS.css({
-				'transform': 'translate(0%)'
+				'transform': 'translate(0%)',
+				'transform': '-webkit-translate(0%)'
 			});
 			$container.css({
-				'transform': 'translate(0%)'
+				'transform': 'translate(0%)',
+				'transform': '-webkit-translate(0%)'
 			});
 		}, 200);
 	});
