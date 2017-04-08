@@ -1,24 +1,27 @@
-body {
-    margin: 0;
-}
-html {
-    width: 100%;
-    background: red;
 
+html, body {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+body {
+    width: 100%;
+    font-family: 'Space Mono', monospace;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #EEDEBE url("https://www.transparenttextures.com/patterns/cartographer.png");
 }
 
 *, *:before, *:after {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-}
-
-body {
-    font-family: 'Space Mono', monospace;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: #EEDEBE url("https://www.transparenttextures.com/patterns/cartographer.png");
 }
 
 a{
@@ -111,9 +114,9 @@ svg {
 }
 .text {
     font-family: 'Space Mono', monospace;
-    font-size: 22px;
-    line-height: 32px;
-    letter-spacing: 8px;
+    font-size: 1.5em;
+    line-height: 1.5em;
+    letter-spacing: 0.4em;
     color: #fff;
     top: -48px;
     position: relative;
@@ -158,7 +161,7 @@ ul li a:hover {
 
 #emailR{
     position: absolute;
-    font-size: 12px;
+    font-size: 0.9em;
     left:-50px;
     top:37px;
     color: #E0C389;
@@ -167,7 +170,7 @@ ul li a:hover {
 }
 p {
     font-family: 'Space Mono', monospace;
-    font-size: 13px;
+    font-size: 0.9em;
     letter-spacing: -0.5px;
     position: relative;
     color: white;
@@ -259,7 +262,7 @@ p:hover {
     font-family: 'Montserrat', sans-serif;
     color: #fff;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 1.2em;
     letter-spacing: 0;
     font-style: normal;
     color: rgba(223,190,106,0.7);
@@ -306,7 +309,7 @@ p:hover {
     position: relative;
     left: -5px;
     transition: all 0.33s ease;
-    font-size: 30px;
+    font-size: 1.88em;
     color:#fff;
     padding: 6px;
     height: 130px;
@@ -406,4 +409,16 @@ a:hover{
     color: #fff;
 }
 
+@media screen
+and (device-width: 360px)
+and (device-height: 640px)
+and (-webkit-device-pixel-ratio: 3) {
+ section{
+     padding-top: 30px;
+ }
+    #homeB{
+        left: 15%;
+        top: calc(100% - 38px);
+    }
+}
 
