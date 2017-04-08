@@ -23,11 +23,11 @@ $(document).ready(function() {
         setTimeout(function() {
             $hireS.css({
                 'transform': 'translate(-100%)',
-				'transform': '-webkit-translate(-100%)'
+				'-webkit-transform': 'translate(-100%)'
             });
             $container.css({
                 'transform': 'translate(-100%)',
-				'transform': '-webkit-translate(-100%)'
+				'-webkit-transform': 'translate(-100%)'
             });
         }, 200);
     });
@@ -38,11 +38,11 @@ $(document).ready(function() {
 		setTimeout(function() {
 			$workS.css({
 				'transform': 'translate(-100%)',
-				'transform': '-webkit-translate(100%)'
+				'-webkit-transform': 'translate(100%)'
 			});
 			$container.css({
 				'transform': 'translate(-100%)',
-				'transform': '-webkit-translate(100%)'
+				'-webkit-transform': 'translate(100%)'
 			});
 		}, 200);
 	});
@@ -54,11 +54,11 @@ $(document).ready(function() {
         setTimeout(function() {
             $hireS.css({
                 'transform': 'translate(0%)',
-				'transform': '-webkit-translate(0%)'
+				'-webkit-transform': 'translate(0%)'
             });
             $container.css({
                 'transform': 'translate(0%)',
-				'transform': '-webkit-translate(0%)'
+				'-webkit-transform': 'translate(0%)'
             });
         }, 200);
     });
@@ -69,11 +69,11 @@ $(document).ready(function() {
 		setTimeout(function() {
 			$workS.css({
 				'transform': 'translate(0%)',
-				'transform': '-webkit-translate(0%)'
+				'-webkit-transform': 'translate(0%)'
 			});
 			$container.css({
 				'transform': 'translate(0%)',
-				'transform': '-webkit-translate(0%)'
+				'-webkit-transform': 'translate(0%)'
 			});
 		}, 200);
 	});

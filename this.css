@@ -198,6 +198,7 @@ p {
 }
 #desc:hover{
     transform: translateX(-10px);
+    -webkit-transform: translateX(-10px);
 }
 
 #desc:after{
@@ -320,6 +321,7 @@ p:hover {
     color: #fff;
     background-position: 99% 50%;
     transform: translateX(-10px);
+    -webkit-transform: translateX(-10px);
 }
 #workH:hover .p::after{
     opacity: 1;
