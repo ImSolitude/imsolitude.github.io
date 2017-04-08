@@ -306,6 +306,7 @@ p:hover {
 #workH .p{
     width: 120px;
     position: relative;
+    left: -5px;
     transition: all 0.33s ease;
     font-size: 30px;
     color:#fff;
@@ -337,7 +338,7 @@ p:hover {
 .notSelected{
     opacity: 0.3;
 }
-.p span{
+.p span:not(.blinking-cursor){
     position: absolute;
     top: 130px;
     left: 5px;
@@ -359,6 +360,7 @@ p:hover {
     -o-animation: 1s blink step-end infinite;
     animation: 1s blink step-end infinite;
     font-size: 85%;
+    font-weight: 400;
 }
 
 .blinking-cursor:hover {
@@ -371,7 +373,7 @@ p:hover {
         color: transparent;
     }
     50% {
-        color: #4133B4;
+        color:  rgba(223,190,106,0.3);
     }
 }
 
@@ -380,7 +382,7 @@ p:hover {
         color: transparent;
     }
     50% {
-        color: #4133B4;
+        color:  rgba(223,190,106,0.3);
     }
 }
 
@@ -389,7 +391,7 @@ p:hover {
         color: transparent;
     }
     50% {
-        color: #4133B4;
+        color:  rgba(223,190,106,0.3);
     }
 }
 
@@ -398,7 +400,7 @@ p:hover {
         color: transparent;
     }
     50% {
-        color: #4133B4;
+        color:  rgba(223,190,106,0.3);
     }
 }
 
