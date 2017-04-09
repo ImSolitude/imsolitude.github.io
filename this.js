@@ -22,7 +22,7 @@ $(document).ready(function() {
         $blurThisH.removeClass('blur');
         setTimeout(function() {
             $hireS.css({
-                'transform': 'translateX(-100%)',
+             	 'transform': 'translateX(-100%)',
 				'-webkit-transform': 'translateX(-100%)',
 
             });
