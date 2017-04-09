@@ -27,20 +27,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="this.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="this.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/this.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="47">
-              <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+            <state relative-caret-position="219">
+              <caret line="476" column="21" lean-forward="true" selection-start-line="476" selection-start-column="21" selection-end-line="476" selection-end-column="21" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="this.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="this.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/this.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
+            <state relative-caret-position="-312">
               <caret line="9" column="36" lean-forward="false" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
               <folding />
             </state>
@@ -93,8 +93,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/this.js" />
-        <option value="$PROJECT_DIR$/this.css" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/this.css" />
       </list>
     </option>
   </component>
@@ -547,18 +547,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/this.css">
+    <entry file="file://$PROJECT_DIR$/this.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="47">
-          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+        <state relative-caret-position="-312">
+          <caret line="9" column="36" lean-forward="false" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/this.js">
+    <entry file="file://$PROJECT_DIR$/this.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="9" column="36" lean-forward="false" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
+        <state relative-caret-position="219">
+          <caret line="476" column="21" lean-forward="true" selection-start-line="476" selection-start-column="21" selection-end-line="476" selection-end-column="21" />
           <folding />
         </state>
       </provider>
