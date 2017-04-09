@@ -22,12 +22,13 @@ $(document).ready(function() {
         $blurThisH.removeClass('blur');
         setTimeout(function() {
             $hireS.css({
-                'transform': 'translate(-100%)',
-				'-webkit-transform': 'translate(-100%)'
+                'transform': 'translateX(-100%)',
+				'-webkit-transform': 'translateX(-100%)',
+
             });
             $container.css({
-                'transform': 'translate(-100%)',
-				'-webkit-transform': 'translate(-100%)'
+                'transform': 'translateX(-100%)',
+				'-webkit-transform': 'translateX(-100%)'
             });
         }, 200);
     });
@@ -37,12 +38,12 @@ $(document).ready(function() {
 		$blurThisW.removeClass('blur');
 		setTimeout(function() {
 			$workS.css({
-				'transform': 'translate(-100%)',
-				'-webkit-transform': 'translate(-100%)'
+				'transform': 'translateX(-100%)',
+				'-webkit-transform': 'translateX(-100%)'
 			});
 			$container.css({
-				'transform': 'translate(-100%)',
-				'-webkit-transform': 'translate(-100%)'
+				'transform': 'translateX(-100%)',
+				'-webkit-transform': 'translateX(-100%)'
 			});
 		}, 200);
 	});
@@ -53,12 +54,12 @@ $(document).ready(function() {
         $blurThisH.addClass('blur');
         setTimeout(function() {
             $hireS.css({
-                'transform': 'translate(0%)',
-				'-webkit-transform': 'translate(0%)'
+                'transform': 'translateX(0%)',
+				'-webkit-transform': 'translateX(0%)'
             });
             $container.css({
-                'transform': 'translate(0%)',
-				'-webkit-transform': 'translate(0%)'
+                'transform': 'translateX(0%)',
+				'-webkit-transform': 'translateX(0%)'
             });
         }, 200);
     });
@@ -68,12 +69,12 @@ $(document).ready(function() {
 		$blurThisW.addClass('blur');
 		setTimeout(function() {
 			$workS.css({
-				'transform': 'translate(0%)',
-				'-webkit-transform': 'translate(0%)'
+				'transform': 'translateX(0%)',
+				'-webkit-transform': 'translateX(0%)'
 			});
 			$container.css({
-				'transform': 'translate(0%)',
-				'-webkit-transform': 'translate(0%)'
+				'transform': 'translateX(0%)',
+				'-webkit-transform': 'translateX(0%)'
 			});
 		}, 200);
 	});
