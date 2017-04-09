@@ -28,7 +28,7 @@ a{
     text-decoration: none;
 }
 #wrapper{
-
+    overflow: hidden;
     background: none;
     padding: 0;
 }
