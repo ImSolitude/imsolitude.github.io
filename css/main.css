@@ -8193,6 +8193,10 @@ a:hover:visited, a:visited:visited, a:link:visited, a:active:visited {
   transition: all 0.33s ease;
 }
 
+.work.active-menu {
+  color: #010712 !important;
+}
+
 @keyframes pulse {
   to {
     box-shadow: 0 0 0 7px rgba(55, 160, 0, 0);
