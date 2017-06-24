@@ -11,9 +11,11 @@ $yellow: #F8D800
 $lightYellow: #FDEB71
 $blue: #736EFE
 $lightBlue: #5EFCE8
-$about: linear-gradient( 135deg, $lightBlue 0%, $blue 100%);
-$work: linear-gradient( 135deg, $darkColor 0%, #010711 100%);
-
+$about: linear-gradient( 135deg, $lightBlue 0%, $blue 100%)
+$work: linear-gradient( 135deg, $darkColor 0%, #010711 100%)
+$project: linear-gradient( 135deg, rgba(94, 252, 232, 1) 0%, rgba(115, 110, 254, 0.5) 100%)
+// $projectBack: linear-gradient( 45deg, rgba(0, 0, 0, 0.9) 20%, rgba(0, 0, 0, 0.4) 100%)
+$projectBack: linear-gradient( 45deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.4) 100%)
 
 html
     box-sizing: border-box
@@ -217,12 +219,120 @@ a:hover, a:visited, a:link, a:active,
         background: $work
         padding-top: 50px
         position: relative
+        overflow-y: auto
+        overflow-x: hidden
         @extend %transition
         @media (max-width: 1000px)
-            height: 100%
+            height: auto
             padding-top: 25px
+        .projects
+            padding: 0px 20px
+            @media (max-width: 600px)
+                padding: 0px 10px
+            .project-box
+                width: 100%
+                height: 100px
+                cursor: pointer
+                background-repeat: no-repeat, no-repeat
+                color: $darkColor
+                z-index: 0
+                padding: 0px 0px 0px 30px
+                margin-bottom: 20px
+                box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)
+                position: relative
+                @extend %transition
+                &::before
+                    content: "\0279C"
+                    top: 25px
+                    left: 0
+                    width: 100%
+                    height: 100%
+                    position: absolute
+                    font-weight: 100
+                    font-size: 4em
+                    opacity: 0
+                    color: $lightColor
+                    z-index: -2222222222222222222222222222
+                    transition: all 0.2s ease
+                    transform: translateX(calc(100% - 30px))
+                &:hover::before
+                    opacity: 1
+                    transform: translateX(calc(100% - 10px))
+                    transition: all 0.33s ease
+                span
+                    position: relative
+                    top: -10px
+                    margin-left: 0px
+                    color: $darkColor
+                    border-color:  rgba(0, 0, 0, 0.2)
+
+                @media (max-width: 600px)
+                    padding-top: 5px
+                    h2
+                        font-size: 20px
+                @media (max-width: 400px)
+                    h2
+                        font-size: 15px
+                    span
+                        font-size: 8px
+                &:hover
+
+                    span
+
+                        border-color: rgba(0, 0, 0, 0.1)
+                &:hover::after
+                    opacity: 1
+                &::after
+                    content: ''
+                    position: absolute
+                    width: 100%
+                    height: 100%
+                    left: 0
+                    top: 0
+                    opacity: 0
+                    z-index: -1
+                    @extend %transition
+
+                &.p-1
+                    background: $projectBack , url('../assets/images/project-1.png')
+                    background-position: center center, top right
+                    &::after
+                        background: $project , url('../assets/images/project-1.png')
+                        background-position: center center, top right
+                &.p-2
+                    background: $projectBack , url('../assets/images/project-2.png')
+                    background-position: center center, top right
+                    &::after
+                        background: $project , url('../assets/images/project-2.png')
+                        background-position: center center, top right
+                &.p-3
+                    background: $projectBack , url('../assets/images/project-3.png')
+                    background-position: center center, center left
+                    &::after
+                        background: $project , url('../assets/images/project-3.png')
+                        background-position: center center, center left
+                &.p-4
+                    background: $projectBack , url('../assets/images/project-4.png')
+                    background-position: center center, top left
+                    &::after
+                        background: $project , url('../assets/images/project-4.png')
+                        background-position: center center, top left
+                &.p-5
+                    background: $projectBack , url('../assets/images/project-5.png')
+                    background-position: center center, top right
+                    &::after
+                        background: $project , url('../assets/images/project-5.png')
+                        background-position: center center, top right
+                &.p-6
+                    background: $projectBack , url('../assets/images/project-6.png')
+                    background-position: center center, top right
+                    &::after
+                        background: $project , url('../assets/images/project-6.png')
+                        background-position: center center, top right
 
 
+
+// linear-gradient( 135deg, rgba(0,0,0, 0.8) 0%, rgba(0,0,0, 0.2) 100%)
 .hire
     margin-top: -5px
     font-size: 12px
@@ -250,6 +360,9 @@ a:hover, a:visited, a:link, a:active,
         background-color : rgba(55, 160, 0, 1)
         span
             background-color : $lightColor
+
+
+
 
 
 .content
