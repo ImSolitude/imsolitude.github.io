@@ -8039,7 +8039,9 @@ a:hover:visited, a:visited:visited, a:link:visited, a:active:visited {
 @media (max-width: 1000px) {
   #wrapper #work {
     height: auto;
+    overflow-y: hidden;
     padding-top: 25px;
+    padding-bottom: 25px;
   }
 }
 
