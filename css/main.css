@@ -7969,6 +7969,10 @@ a:hover:visited, a:visited:visited, a:link:visited, a:active:visited {
 
 #wrapper #home {
   background: black;
+  display: -webkit-flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
   display: flex;
   justify-content: center;
   align-items: center;
