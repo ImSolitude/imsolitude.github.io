@@ -7775,7 +7775,7 @@ a:hover:visited, a:visited:visited, a:link:visited, a:active:visited {
 }
 
 .navbar {
-  background: red;
+  background: transparent;
   border: none;
   margin: 0;
 }
