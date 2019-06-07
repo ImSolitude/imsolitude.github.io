@@ -1,0 +1,406 @@
+// @import "../node_modules/bootstrap/scss/bootstrap";
+// @import "../scss/bootstrap/custom.sass"
+
+html  
+    box-sizing: border-box
+    height: 100% 
+    position: relative
+    scroll-behavior: smooth
+
+body
+    height: 100%
+    margin: 0
+    background: white
+    font-family: 'ATSurt Light'
+    overflow-x: hidden
+*   
+    -moz-box-sizing: border-box
+    -webkit-box-sizing: border-box
+    box-sizing: border-box
+=full-width-flex
+    flex: 1 1 100%
+=display-flex-center
+    display: flex
+    justify-content: center
+    align-items: center
+=hover-text
+    background: white
+    color: rgba(0, 0, 0, 0.1)
+    text-decoration: line-through
+=hover-icon
+    &:hover
+            background: black
+            .div
+                background-color: white
+a
+    color: inherit
+    text-decoration: none
+p
+    &.large
+        font-size: 1.5rem
+.container
+    margin: 0 10vw
+    .row
+        display: flex
+        width: 100%
+        flex-wrap: wrap
+header
+    .container
+        display: flex
+        margin-top: 3rem
+        align-items: center
+        justify-content: space-between
+    .hamburger
+        cursor: pointer
+        width: 6rem
+        height: 6rem
+        +display-flex-center
+        flex-direction: column
+        position: fixed
+        right: 3rem
+        z-index: 999
+        opacity: 1
+        transition: all 0.3s ease
+        +hover-icon
+        &.hide
+            opacity: 0
+        @media (max-width: 992px)
+            right: 10px
+        &.closed .wrapper
+            +display-flex-center
+            width: 96px
+            height: 96px
+            position: fixed 
+        .div
+            transition: all 0.3s ease
+            display: block
+            background-color: black
+            width: 48px
+            height: 6px 
+            &:nth-child(1)
+                margin-bottom: 0.725rem
+        &.closed
+            .div
+                position: fixed
+                background: white
+                &:nth-child(1)
+                    margin-bottom: 0
+                    transform: rotate(45deg)
+                &:nth-child(2)
+                    transform: rotate(-45deg)
+.brand
+    font-family: 'ATSurt Ultra'
+    font-size: 3rem
+    font-weight: 500
+    padding: 1rem 1rem 1rem 0
+    @media (max-width: 800px) 
+        font-size: 2rem
+    @media (max-width: 660px) 
+        font-size: 2rem
+        span
+            display: none
+    
+    & span
+        font-family: 'Karla', sans-serif
+        font-size: 1rem
+        color: rgba(0,0,0,0.2)
+        vertical-align: middle
+.slide-up
+    width: 96px
+    height: 96px
+    position: fixed
+    bottom: 120px
+    right: 3rem
+    opacity: 0
+    transition: all 0.3s ease
+    display: none
+    transform: rotate(180deg)
+    +display-flex-center
+    @media (max-width: 992px)
+        right: 10px
+    a
+        width: 100%
+        height: 100%
+        display: flex
+        justify-content: center
+        align-items: center
+    &:hover
+        background: black
+        svg
+            fill: white
+    &.show
+        opacity: 1
+section.sidebar
+    display: none
+    width: 100vw
+    height: 100vh
+    background: black
+    position: absolute
+    top: 0
+    overflow: hidden
+    &-show
+        display: block
+        position: fixed
+        z-index: 99
+    .menu-wrapper
+        font-size: 4rem
+        height: 100%
+        color: white
+        +display-flex-center
+        align-items: center
+        list-style: none
+        flex-direction: column
+        .menu-item
+            margin-bottom: 1rem
+            width: 300px
+            &.socials
+                padding-left: 5px
+                a
+                    display: inline-block
+                    width: 40px
+                    height: 40px
+                    &::before 
+                        left: 0px
+                        bottom: -30px
+
+            a
+                position: relative
+                text-align: left
+                &:hover::before
+                    transform-origin: bottom left
+                    transform: scaleX(1)
+                &::before 
+                    content: ''
+                    position: absolute
+                    bottom: -5px
+                    left: 5px
+                    right: 0
+                    height: 2px
+                    background-color: white
+                    transform-origin: bottom right
+                    transform: scaleX(0)
+                    transition: transform 0.5s ease
+
+
+section.hero
+    // height: calc(100vh - 100px)
+    .container
+    
+    .h1
+        margin-bottom: 2rem
+        line-height: 5rem
+    p.large
+        font-family: 'Karla', sans-serif
+        width: 100%
+        margin: 0 0 1rem
+    p .email
+        cursor: pointer
+        background: black
+        color: white
+        padding: 0.5rem
+        &:hover
+            +hover-text
+            
+    h1
+        font-size: 3.5rem
+        font-weight: 300
+        span
+            display: block
+        i
+            -webkit-user-select: none 
+            -moz-user-select: none
+            -ms-user-select: none
+            user-select: none
+            font-style: normal
+            color: rgba(0,0,0,0.1)
+            text-decoration: line-through
+            transition: all 0.3s ease
+            opacity: 0
+            &.muted
+                opacity: 1
+                transition: all 0.3s ease
+    .slide-down
+        margin: 4rem 0 2rem 0
+        // position: relative
+        // top: 100px
+        // left: calc(-3rem + 20px)
+        width:  6rem
+        height: 6rem
+        +display-flex-center
+        a
+            width: 6rem
+            height: 6rem
+            +display-flex-center
+            position: relative
+            left: calc(-3rem + 20px)
+            color: red
+            &:hover
+                background: black
+
+section
+    padding: 6rem 0
+
+section#projects
+    background: white
+    .brand
+        color: black
+        span
+            color: rgba(0,0,0,0.2)
+    .projects-grid
+        margin-top: 2rem
+        flex-wrap: wrap
+        justify-content: space-evenly
+    .project
+        flex: 0 1 35%
+        margin: 2rem 0
+        background: white
+        border: 1px dashed rgba(0,0,0,0.4)
+        &.more-at
+            flex: 0 1 80%
+            svg
+                vertical-align: bottom
+            &:hover svg
+                fill: white
+            .project-wrapper
+                padding: 1rem
+            .project-content
+                text-align: center
+                margin-top: 0
+                &::before
+                    display: none
+                h3
+                    margin-top: 0
+
+        @media (max-width: 1200px) 
+            flex-basis: 45%
+        @media (max-width: 992px)
+            .project-wrapper
+                padding: 1rem!important
+        @media (max-width: 768px) 
+            flex-basis: 80%
+        @media (max-width: 567px) 
+            flex-basis: 90%
+        &::before
+            content: ""
+            padding-top: 100%
+        &:hover
+            background: black
+            color: white
+            .img-wrapper
+                background: white
+            .img-wrapper .overlay
+                display: block
+            .project-content p
+                color: rgba(255,255,255,0.5)
+        .project-wrapper
+            display: flex
+            flex-direction: column
+            padding: 2rem
+            overflow: hidden
+        .img-wrapper
+            position: relative
+            padding-top: 100%
+            &::before
+                content: ''
+                padding-top: 100%
+            .overlay
+                font-family: 'Karla', sans-serif
+                font-size: 1rem
+                color: black
+                position: absolute
+                top: 0
+                left: 1rem
+                display: none
+                span
+                    vertical-align: middle
+                    font-size: 0.725rem
+        .img
+        width: 100%
+        .project-content
+            font-family: 'Karla', sans-serif
+            text-transform: uppercase
+            margin-top: 2rem
+            position: relative
+            &::before
+                content: ''
+                position: absolute
+                top: 8px
+                left: -100px
+                width: 200%
+                height: 100%
+                overflow: hidden
+                border-top: 1px dashed rgba(0, 0, 0, 0.4)
+            h3
+                margin-bottom: 0
+                font-size: 2rem
+            p
+                font-size: 0.9rem
+                margin: 0
+                color: rgba(0,0,0,0.5)
+  
+// projects images  
+.project-1
+    .img-wrapper
+        text-decoration: none
+        background: url('../src/assets/projects/project-1.png') no-repeat
+        background-position: top left
+        background-size: 150%
+.project-2
+    .img-wrapper
+        background: url('../src/assets/projects/project-2.png') no-repeat
+        background-position: top left
+        background-size: 150%
+.project-3
+    .img-wrapper
+        background: url('../src/assets/projects/project-3.png') no-repeat
+        background-position: top left
+        background-size: 150%
+.project-4
+    .img-wrapper
+        background: url('../src/assets/projects/project-4.jpeg') no-repeat
+        background-position: top left
+        background-size: 150%
+.project-5
+    .img-wrapper
+        background: url('../src/assets/projects/project-5.png') no-repeat
+        background-position: top left
+        background-size: 150%
+// projects images 
+
+footer
+    background: black
+    height: 100px
+    .container
+        height: 100%
+    .row
+        font-family: 'Karla', sans-serif
+        height: 100%
+        color: rgba(255,255,255,0.2)
+        justify-content: space-between
+        .col
+            +display-flex-center
+            flex: 0 1 30%
+            h3 span
+                vertical-align: middle
+
+
+
+@font-face 
+    font-family: 'ATSurt Light'
+    src: url('fonts/ATSurt-Light.otf')
+
+@font-face 
+    font-family: 'ATSurt Regular'
+    src: url('fonts/ATSurt-Regular.otf')
+
+@font-face 
+    font-family: 'ATSurt Ultra'
+    src: url('fonts/Surt-LightExtended.otf')
+
+    
+
+
+
+    
+ 
+    
