@@ -158,9 +158,6 @@ header .hamburger.closed .div:nth-child(2) {
   .brand {
     font-size: 2rem;
   }
-  .brand span {
-    display: none;
-  }
 }
 
 .brand span {
@@ -168,6 +165,12 @@ header .hamburger.closed .div:nth-child(2) {
   font-size: 1rem;
   color: rgba(0, 0, 0, 0.2);
   vertical-align: middle;
+}
+
+@media (max-width: 660px) {
+  .brand span {
+    font-size: 0.725rem;
+  }
 }
 
 .slide-up {
@@ -196,6 +199,12 @@ header .hamburger.closed .div:nth-child(2) {
 @media (max-width: 992px) {
   .slide-up {
     right: 10px;
+  }
+}
+
+@media (max-width: 567px) {
+  .slide-up {
+    display: none;
   }
 }
 
@@ -323,11 +332,24 @@ section.hero p.large {
   margin: 0 0 1rem;
 }
 
+section.hero .large.talk {
+  padding-top: 1rem;
+  font-size: 1rem;
+}
+
 section.hero p .email {
+  font-size: 1rem;
   cursor: pointer;
   background: black;
   color: white;
-  padding: 0.5rem;
+  padding: 0.25rem;
+}
+
+@media (max-width: 390px) {
+  section.hero p .email {
+    position: relative;
+    top: 10px;
+  }
 }
 
 section.hero p .email:hover {
@@ -339,6 +361,12 @@ section.hero p .email:hover {
 section.hero h1 {
   font-size: 3.5rem;
   font-weight: 300;
+}
+
+@media (max-width: 567px) {
+  section.hero h1 {
+    font-size: 2.5rem;
+  }
 }
 
 section.hero h1 span {
@@ -402,6 +430,12 @@ section.hero .slide-down a:hover {
 
 section {
   padding: 6rem 0;
+}
+
+@media (max-width: 567px) {
+  section {
+    padding: 3rem 0;
+  }
 }
 
 section#projects {
@@ -544,6 +578,7 @@ section#projects .project .img-wrapper .overlay {
   position: absolute;
   top: 0;
   left: 1rem;
+  right: 1rem;
   display: none;
 }
 
@@ -612,9 +647,21 @@ section#projects .project .project-content p {
   background-size: 150%;
 }
 
+.project-6 .img-wrapper {
+  background: url("../src/assets/projects/project-6.png") no-repeat;
+  background-position: top left;
+  background-size: 150%;
+}
+
 footer {
   background: black;
   height: 100px;
+}
+
+@media (max-width: 567px) {
+  footer {
+    font-size: 0.725rem;
+  }
 }
 
 footer .container {
