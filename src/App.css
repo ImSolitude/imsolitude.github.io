@@ -589,7 +589,6 @@ section#projects .project .img-wrapper .overlay span {
 
 section#projects .project .project-content {
   font-family: 'Karla', sans-serif;
-  text-transform: uppercase;
   margin-top: 2rem;
   position: relative;
 }
@@ -651,6 +650,12 @@ section#projects .project .project-content p {
   background: url("../src/assets/projects/project-6.png") no-repeat;
   background-position: top left;
   background-size: 150%;
+}
+
+.project-7 .img-wrapper {
+  background: url("../src/assets/projects/project-7.png") no-repeat;
+  background-position: top left;
+  background-size: cover;
 }
 
 footer {
