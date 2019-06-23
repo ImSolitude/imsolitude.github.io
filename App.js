@@ -52,6 +52,5 @@ function startAnimate() {
     : '';
   step === 4 ? clearInterval(steps) : '';
   step += 1;
-  console.count('Animate');
 }
 steps = setInterval(startAnimate, 2000);
