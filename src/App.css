@@ -658,6 +658,12 @@ section#projects .project .project-content p {
   background-size: cover;
 }
 
+.project-8 .img-wrapper {
+  background: url("../src/assets/projects/project-8.png") no-repeat;
+  background-position: top left;
+  background-size: cover;
+}
+
 footer {
   background: black;
   height: 100px;
