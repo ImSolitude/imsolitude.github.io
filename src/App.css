@@ -670,6 +670,18 @@ section#projects .project .project-content p {
   background-size: cover;
 }
 
+.project-10 .img-wrapper {
+  background: url("../src/assets/projects/project-10.png") no-repeat;
+  background-position: bottom left;
+  background-size: 150%;
+}
+
+.project-11 .img-wrapper {
+  background: url("../src/assets/projects/project-11.png") no-repeat;
+  background-position: top left;
+  background-size: 150%;
+}
+
 footer {
   background: black;
   height: 100px;
