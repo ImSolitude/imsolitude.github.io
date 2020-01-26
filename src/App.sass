@@ -1,10 +1,10 @@
 
 
-html  
-    box-sizing: border-box 
-    height: 100% 
+html
+    box-sizing: border-box
+    height: 100%
     position: relative
-    scroll-behavior: smooth 
+    scroll-behavior: smooth
 
 body
     height: 100%
@@ -12,7 +12,7 @@ body
     background: white
     font-family: 'ATSurt Light'
     overflow-x: hidden
-*   
+*
     -moz-box-sizing: border-box
     -webkit-box-sizing: border-box
     box-sizing: border-box
@@ -69,13 +69,13 @@ header
             +display-flex-center
             width: 96px
             height: 96px
-            position: fixed 
+            position: fixed
         .div
             transition: all 0.3s ease
             display: block
             background-color: black
             width: 48px
-            height: 6px 
+            height: 6px
             &:nth-child(1)
                 margin-bottom: 0.725rem
         &.closed
@@ -92,9 +92,9 @@ header
     font-size: 3rem
     font-weight: 500
     padding: 1rem 1rem 1rem 0
-    @media (max-width: 800px) 
+    @media (max-width: 800px)
         font-size: 2rem
-    @media (max-width: 660px) 
+    @media (max-width: 660px)
         font-size: 2rem
     & span
         font-family: 'Karla', sans-serif
@@ -161,7 +161,7 @@ section.sidebar
                     display: inline-block
                     width: 40px
                     height: 40px
-                    &::before 
+                    &::before
                         left: 0px
                         bottom: -30px
 
@@ -171,7 +171,7 @@ section.sidebar
                 &:hover::before
                     transform-origin: bottom left
                     transform: scaleX(1)
-                &::before 
+                &::before
                     content: ''
                     position: absolute
                     bottom: -5px
@@ -187,7 +187,7 @@ section.sidebar
 section.hero
     // height: calc(100vh - 100px)
     .container
-    
+
     .h1
         margin-bottom: 2rem
         line-height: 5rem
@@ -209,7 +209,7 @@ section.hero
             top: 10px
         &:hover
             +hover-text
-            
+
     h1
         font-size: 3.5rem
         font-weight: 300
@@ -218,7 +218,7 @@ section.hero
         span
             display: block
         i
-            -webkit-user-select: none 
+            -webkit-user-select: none
             -moz-user-select: none
             -ms-user-select: none
             user-select: none
@@ -284,14 +284,14 @@ section#projects
                 h3
                     margin-top: 0
 
-        @media (max-width: 1200px) 
+        @media (max-width: 1200px)
             flex-basis: 45%
         @media (max-width: 992px)
             .project-wrapper
                 padding: 1rem!important
-        @media (max-width: 768px) 
+        @media (max-width: 768px)
             flex-basis: 80%
-        @media (max-width: 567px) 
+        @media (max-width: 567px)
             flex-basis: 90%
         &::before
             content: ""
@@ -351,8 +351,8 @@ section#projects
                 font-size: 0.9rem
                 margin: 0
                 color: rgba(0,0,0,0.5)
-  
-// projects images  
+
+// projects images
 .project-1
     .img-wrapper
         text-decoration: none
@@ -387,29 +387,34 @@ section#projects
 .project-7
     .img-wrapper
         background: url('../src/assets/projects/project-7.png') no-repeat
-        background-position: top left 
+        background-position: top left
         background-size: cover
 .project-8
     .img-wrapper
         background: url('../src/assets/projects/project-8.png') no-repeat
-        background-position: top l eft 
+        background-position: top l eft
         background-size: cover
 .project-9
     .img-wrapper
         background: url('../src/assets/projects/project-9.png') no-repeat
-        background-position: top left 
+        background-position: top left
         background-size: cover
 .project-10
     .img-wrapper
         background: url('../src/assets/projects/project-10.png') no-repeat
         background-position: bottom left
         background-size: 150%
-.project-11 
+.project-11
     .img-wrapper
         background: url('../src/assets/projects/project-11.png') no-repeat
-        background-position: top left 
+        background-position: top left
         background-size: 150%
-// projects images  
+.project-12
+    .img-wrapper
+        background: url('../src/assets/projects/project-12.png') no-repeat
+        background-position: top left
+        background-size: 150%
+// projects images
 
 footer
     @media (max-width: 567px)
@@ -431,22 +436,22 @@ footer
 
 
 
-@font-face 
+@font-face
     font-family: 'ATSurt Light'
     src: url('fonts/ATSurt-Light.otf')
 
-@font-face 
+@font-face
     font-family: 'ATSurt Regular'
     src: url('fonts/ATSurt-Regular.otf')
 
-@font-face 
+@font-face
     font-family: 'ATSurt Ultra'
     src: url('fonts/Surt-LightExtended.otf')
 
-    
 
 
 
-    
- 
-    
+
+
+
+
