@@ -688,6 +688,12 @@ section#projects .project .project-content p {
   background-size: 150%;
 }
 
+.project-13 .img-wrapper {
+  background: url("../src/assets/projects/project-13.gif") no-repeat;
+  background-position: top left;
+  background-size: 150%;
+}
+
 footer {
   background: black;
   height: 100px;
