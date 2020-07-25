@@ -1,0 +1,37 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "deploy-gh-pages": "rm -rf node_modules/.cache && rimraf out && next build && next export && touch out/.nojekyll && gh-pages -d out -t true",
+    "build-master": "rm -rf node_modules/.cache && rm -rf out && rimraf out && next build && next export && touch out/.nojekyll",
+    "push-master": "git add out/ && git commit -m \"Deploy to gh-pages\" && git push origin `git subtree split --prefix out master`:master --force"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.29",
+    "@fortawesome/free-brands-svg-icons": "^5.14.0",
+    "@fortawesome/free-solid-svg-icons": "^5.13.1",
+    "@fortawesome/react-fontawesome": "^0.1.11",
+    "autoprefixer": "^9.8.4",
+    "babel-plugin-styled-components": "^1.10.7",
+    "classnames": "^2.2.6",
+    "framer-motion": "^1.11.1",
+    "next": "^9.4.4",
+    "nprogress": "^0.2.0",
+    "postcss-import": "^12.0.1",
+    "prop-types": "^15.7.2",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "react-intersection-observer": "^8.26.2",
+    "react-spinners": "^0.9.0",
+    "sass": "^1.26.9",
+    "styled-components": "^5.1.1"
+  },
+  "devDependencies": {
+    "postcss-preset-env": "^6.7.0",
+    "tailwindcss": "^1.4.6"
+  }
+}

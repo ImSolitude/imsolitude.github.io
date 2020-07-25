@@ -1,0 +1,42 @@
+// CSS Variables
+:root {
+  --main-100: #cce1ff;
+  --main-200: #99c3ff;
+  --main-300: #66a6ff;
+  --main-400: #3388ff;
+  --main-500: #006aff;
+  --main-600: #0055cc;
+  --main-800: #004099;
+  --main-900: #002a66;
+  --main-000: #001533;
+}
+
+@import "tailwindcss/base";
+
+// Base styles
+@import "global";
+@import "fontStyles";
+@import "customTailwindBase";
+
+html,
+body {
+  scroll-behavior: smooth;
+  @apply font-body bg-white;
+}
+// NProgress
+#nprogress {
+  & .bar {
+    background: var(--main-500) !important;
+  }
+  & .peg {
+    box-shadow: 0 0 10px var(--main-500), 0 0 5px var(--main-500) !important;
+  }
+  & .spinner-icon {
+    border-top-color: var(--main-500) !important;
+    border-left-color: var(--main-500) !important;
+  }
+}
+
+@import "tailwindcss/components";
+
+@import "tailwindcss/utilities";

@@ -1,0 +1,25 @@
+// Back To Top
+.backToTopContainer {
+  width: 56px;
+  height: 56px;
+  position: fixed;
+  bottom: 100px;
+  right: 2rem;
+  transition: all 0.3s ease;
+  opacity: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  border-radius: 9999px;
+  z-index: 99999;
+  &.show {
+    opacity: 1 !important;
+    display: flex !important;
+  }
+  @media (max-width: 770px) {
+    right: 10px;
+    bottom: 10px;
+    width: 40px;
+    height: 40px;
+  }
+}

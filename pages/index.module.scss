@@ -1,0 +1,121 @@
+.headerContainer {
+  // padding-top: 84px;
+  height: calc(100vh - 84px);
+}
+.squareContainer {
+  min-height: 350px;
+  @media (max-width: 770px) {
+    min-height: 250px;
+  }
+}
+.skillsContainer {
+}
+.badgesContainer {
+  & span {
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+}
+.ProjectImage {
+  height: 400px;
+  background-position: top left;
+  @media (max-width: 770px) {
+    height: 200px;
+  }
+}
+.StackContainer {
+  display: flex;
+  flex-wrap: wrap;
+  & > * {
+    margin-bottom: 0.5rem;
+    margin-right: 0.5rem;
+  }
+}
+// .Project {
+//   position: relative;
+//   z-index: 0;
+//   &::before {
+//     content: "";
+//     position: absolute;
+//     left: 0;
+//     right: 0;
+//     top: 0;
+//     z-index: -1;
+//     display: block;
+//     width: 100%;
+//     height: 100%;
+//     -webkit-filter: blur(5px);
+//     -moz-filter: blur(5px);
+//     -o-filter: blur(5px);
+//     -ms-filter: blur(5px);
+//     filter: blur(5px);
+//   }
+//   &::after {
+//     content: "";
+//     position: absolute;
+//     left: 0;
+//     right: 0;
+//     top: 0;
+//     z-index: -1;
+//     display: block;
+//     background: #fff;
+//     opacity: 0.5;
+//     width: 100%;
+//     height: 100%;
+//   }
+// }
+// .Project-1 {
+//   &::before {
+//     background-image: url("/images/projects/project-1.png");
+//   }
+// }
+// .Project-2 {
+//   &::before {
+//     background-image: url("/images/projects/project-2.png");
+//   }
+// }
+// .Project-3 {
+//   &::before {
+//     background-image: url("/images/projects/project-3.png");
+//   }
+// }
+// .Project-4 {
+//   &::before {
+//     background-image: url("/images/projects/project-4.png");
+//   }
+// }
+// .Project-5 {
+//   &::before {
+//     background-image: url("/images/projects/project-5.png");
+//   }
+// }
+// .Project-5 {
+//   &::before {
+//     background-image: url("/images/projects/project-6.png");
+//   }
+// }
+// .Project-7 {
+//   &::before {
+//     background-image: url("/images/projects/project-7.png");
+//   }
+// }
+// .Project-8 {
+//   &::before {
+//     background-image: url("/images/projects/project-8.png");
+//   }
+// }
+// .Project-9 {
+//   &::before {
+//     background-image: url("/images/projects/project-9.png");
+//   }
+// }
+// .Project-10 {
+//   &::before {
+//     background-image: url("/images/projects/project-10.png");
+//   }
+// }
+// .Project-11 {
+//   &::before {
+//     background-image: url("/images/projects/project-11.png");
+//   }
+// }
